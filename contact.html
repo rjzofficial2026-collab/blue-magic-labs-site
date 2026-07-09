@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Blue Magic Labs Ltd</title>
+<meta name="description" content="Contact Blue Magic Labs Ltd for supplier, manufacturing, and partnership inquiries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="accent-bar"></div>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <div class="wordmark">Blue Magic <span>Labs</span></div>
+    <nav class="main">
+      <a href="index.html">Home</a>
+      <a href="company.html">Company</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="contact.html" class="current">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:48px;">
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h1 style="font-size:34px;">Supplier, manufacturing &amp; partnership inquiries.</h1>
+    <p class="lede">We respond directly to every qualified inquiry. Please include your company name, location, and area of capability so we can route your message appropriately.</p>
+  </div>
+</section>
+
+<section class="block soft">
+  <div class="wrap grid-2">
+    <div>
+      <h2>Send a message</h2>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+        <label for="company">Company name</label>
+        <input type="text" id="company" name="company" required>
+
+        <label for="name">Contact name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" required>
+
+        <label for="category">Inquiry type</label>
+        <select id="category" name="category">
+          <option>Fragrance / compound supplier</option>
+          <option>Glass &amp; component manufacturer</option>
+          <option>Packaging &amp; print partner</option>
+          <option>Co-packing / fulfillment</option>
+          <option>Other partnership inquiry</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn">Send inquiry</button>
+      </form>
+      <p class="note">This form is configured for Netlify Forms and requires no backend — submissions arrive directly in your Netlify dashboard once deployed.</p>
+    </div>
+
+    <div>
+      <h2>Direct contact</h2>
+      <table class="info">
+        <tr><td>Email</td><td><a href="mailto:contact@raoulzenon.com">contact@raoulzenon.com</a></td></tr>
+        <tr><td>Registered office</td><td>128 City Road, London, EC1V 2NX, United Kingdom</td></tr>
+        <tr><td>Company number</td><td>17325442</td></tr>
+      </table>
+      <p class="note">A dedicated @bluemagic-labs.com email address is being set up and will replace the address above once live.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="col">
+      <h4>Blue Magic Labs Ltd</h4>
+      <div>128 City Road</div>
+      <div>London, EC1V 2NX</div>
+      <div>United Kingdom</div>
+    </div>
+    <div class="col">
+      <h4>Company</h4>
+      <div><a href="company.html">About</a></div>
+      <div><a href="capabilities.html">Capabilities</a></div>
+      <div><a href="contact.html">Contact</a></div>
+      <div><a href="legal.html">Legal &amp; Company Information</a></div>
+    </div>
+    <div class="col">
+      <h4>Registration</h4>
+      <div>Company No. 17325442</div>
+      <div>Incorporated 07 July 2026</div>
+      <div>Registered in England &amp; Wales</div>
+    </div>
+  </div>
+  <div class="wrap bottom">
+    © 2026 Blue Magic Labs Ltd. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
