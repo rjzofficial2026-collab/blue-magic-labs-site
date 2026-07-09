@@ -15,7 +15,12 @@
 <header class="site">
   <div class="wrap nav-row">
     <div class="wordmark">Blue Magic <span>Labs</span></div>
-    <nav class="main">
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <nav class="main" id="primary-navigation">
       <a href="index.html">Home</a>
       <a href="company.html">Company</a>
       <a href="capabilities.html">Capabilities</a>
@@ -108,5 +113,6 @@
   </div>
 </footer>
 
+<script src="js/nav.js" defer></script>
 </body>
 </html>
