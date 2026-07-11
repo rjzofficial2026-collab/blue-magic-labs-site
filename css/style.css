@@ -101,30 +101,16 @@ header.site{
   padding: 18px 0;
   gap: 24px;
 }
-.wordmark{
-  position: relative;
-  font-weight: 760;
-  font-size: 13px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--navy);
-  display:flex;
+.header-logo{
+  display:inline-flex;
   align-items:center;
-  gap:10px;
-  white-space: nowrap;
+  flex-shrink:0;
 }
-.wordmark::before{
-  content:"";
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  background:
-    radial-gradient(circle at 38% 30%, #fff 0 10%, transparent 12%),
-    linear-gradient(135deg, var(--blue), #6E7CFF 56%, var(--gold));
-  display:inline-block;
-  box-shadow: 0 0 0 5px rgba(32,60,255,.08), 0 10px 24px rgba(32,60,255,.25);
+.header-logo img{
+  display:block;
+  width: 238px;
+  height: auto;
 }
-.wordmark span{ color: var(--muted); font-weight: 560; }
 nav.main{
   display:flex;
   align-items:center;
@@ -899,6 +885,7 @@ footer.site .bottom{
   .hero-founder-grid{ grid-template-columns: 1fr; gap: 24px; }
   .hero-founder-media{ margin-top: 0; }
   .hero-founder-photo{ height: 440px; }
+  .header-logo img{ width: 200px; }
   .partner-grid{ grid-template-columns: 1fr; gap: 28px; }
   .principles-grid{ grid-template-columns: 1fr; gap: 0; }
   .principle + .principle{
@@ -961,7 +948,7 @@ footer.site .bottom{
     border-radius: 10px;
     box-shadow: inset 3px 0 0 var(--blue);
   }
-  .wordmark{ font-size: 12px; }
+  .header-logo img{ width: 180px; }
   .lede{ max-width: 100%; }
   .facts{ gap: 8px; padding-top: 22px; }
   .facts div{ width: 100%; border-radius: 14px; }
@@ -975,4 +962,8 @@ footer.site .bottom{
   .founder{ padding: 24px; }
   footer.site .wrap{ display:block; }
   footer.site .col{ margin-bottom: 26px; }
+}
+
+@media (max-width: 360px){
+  .header-logo img{ width: 168px; }
 }
