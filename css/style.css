@@ -106,10 +106,15 @@ header.site{
   align-items:center;
   flex-shrink:0;
 }
+.header-logo picture{
+  display:block;
+  line-height:0;
+}
 .header-logo img{
   display:block;
   width: 238px;
   height: auto;
+  max-width: 100%;
 }
 nav.main{
   display:flex;
@@ -885,7 +890,7 @@ footer.site .bottom{
   .hero-founder-grid{ grid-template-columns: 1fr; gap: 24px; }
   .hero-founder-media{ margin-top: 0; }
   .hero-founder-photo{ height: 440px; }
-  .header-logo img{ width: 200px; }
+  .header-logo img{ width: 200px; height: auto; }
   .partner-grid{ grid-template-columns: 1fr; gap: 28px; }
   .principles-grid{ grid-template-columns: 1fr; gap: 0; }
   .principle + .principle{
@@ -948,7 +953,7 @@ footer.site .bottom{
     border-radius: 10px;
     box-shadow: inset 3px 0 0 var(--blue);
   }
-  .header-logo img{ width: 180px; }
+  .header-logo img{ width: 40px; height: 40px; object-fit: contain; }
   .lede{ max-width: 100%; }
   .facts{ gap: 8px; padding-top: 22px; }
   .facts div{ width: 100%; border-radius: 14px; }
@@ -962,8 +967,4 @@ footer.site .bottom{
   .founder{ padding: 24px; }
   footer.site .wrap{ display:block; }
   footer.site .col{ margin-bottom: 26px; }
-}
-
-@media (max-width: 360px){
-  .header-logo img{ width: 168px; }
 }
