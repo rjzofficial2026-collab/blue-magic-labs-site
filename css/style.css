@@ -263,6 +263,7 @@ body.nav-scroll-lock{ overflow: hidden; }
   align-items:start;
 }
 .hero-london h1{ font-size: clamp(38px, 4.4vw, 58px); line-height: 1.02; }
+@media (min-width: 761px){ .nowrap-desktop{ white-space: nowrap; } }
 .hero-london-media{ margin-top: 24px; }
 .hero-london-photo{
   width:100%;
