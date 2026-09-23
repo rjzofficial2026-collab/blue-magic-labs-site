@@ -98,7 +98,8 @@ header.site{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding: 18px 0;
+  padding-top: 18px;
+  padding-bottom: 18px;
   gap: 24px;
 }
 .header-logo{
@@ -261,6 +262,7 @@ body.nav-scroll-lock{ overflow: hidden; }
   gap: 56px;
   align-items:start;
 }
+.hero-london h1{ font-size: clamp(38px, 4.4vw, 58px); line-height: 1.02; }
 .hero-london-media{ margin-top: 24px; }
 .hero-london-photo{
   width:100%;
@@ -448,6 +450,8 @@ section.block.dark .card{
 }
 section.block.dark .card h3{ color: #fff; }
 section.block.dark .card p{ color: rgba(255,255,255,0.68); }
+section.block.dark .card p a{ color: #fff; border-bottom: 1px solid rgba(255,255,255,.35); }
+section.block.dark .card p a:hover{ border-bottom-color: #fff; }
 
 h2{
   font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
@@ -755,6 +759,29 @@ section.block.dark .note{
   color: var(--ink-soft);
 }
 .card-email:hover{ color: var(--blue); }
+
+/* Contextual section link */
+.section-link{ margin: 32px 0 0; font-size: 14px; font-weight: 700; }
+.section-link a{ color: var(--navy); border-bottom: 1px solid rgba(32,60,255,.30); padding-bottom: 2px; }
+.section-link a:hover{ color: var(--blue); border-bottom-color: var(--blue); }
+
+/* Inquiry link list (mailto) */
+.inquiry-links{ position: relative; z-index: 1; list-style: none; margin: 8px 0 0; padding: 0; }
+.inquiry-links li{ border-bottom: 1px solid rgba(20,33,63,.08); }
+.inquiry-links li:last-child{ border-bottom: none; }
+.inquiry-links a{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 0;
+  font-size: 15px;
+  font-weight: 650;
+  color: var(--ink);
+}
+.inquiry-links a::after{ content:"→"; color: var(--blue); transition: transform .18s ease; }
+.inquiry-links a:hover{ color: var(--blue); }
+.inquiry-links a:hover::after{ transform: translateX(3px); }
 
 /* Form */
 form.contact-form{ max-width: 580px; }
